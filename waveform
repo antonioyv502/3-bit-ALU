@@ -1,3 +1,3 @@
 git add waveform.png   # or images/waveform.png if it's in a subfolder
-git commit -m "Add waveform image showing ALU output"
+git commit -m "waveform.png"
 git push
