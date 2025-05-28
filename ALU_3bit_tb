@@ -1,0 +1,77 @@
+`timescale 1ns / 1ps
+
+module ALU_3bit_tb;
+
+  // Testbench signals
+  reg [2:0] A, B;
+  reg [2:0] sel;
+  wire [2:0] result;
+  wire carry_out;
+  wire zero;
+  wire equal;
+  wire less_than;
+  wire greater_than;
+
+
+  // Instantiate the ALU module
+  ALU_3bit uut (
+    .A(A),
+    .B(B),
+    .sel(sel),
+    .result(result),
+    .carry_out(carry_out),
+    .zero(zero),
+    .equal(equal),
+    .less_than(less_than),
+    .greater_than(greater_than)
+  );
+
+  // Test procedure
+  initial begin
+    // Dump file setup
+    $dumpfile("ALU_3bit_tb.vcd");
+    $dumpvars(0, ALU_3bit_tb);
+    
+    // Test case 1: Addition (A + B)
+    A = 3'b111; B = 3'b001; sel = 3'b001;   //Expected result: result:000, carry_out: 1
+    #10;
+ 
+    // Test case 2: Subtraction (A - B)
+    A = 3'b111; B = 3'b001; sel = 3'b010;  //Expected result: 110
+    #10;
+    
+    // Test case 3: AND operation(result should be zero, zero flag should go high)
+    A = 3'b101; B = 3'b010; sel = 3'b011;  Expected result: 000
+    #10;
+    
+    // Test case 4: OR operation
+    A = 3'b011; B = 3'b100; sel = 3'b100; Expected result: 111
+    #10;
+    
+    // Test case 5: Zero detection (A - A should be zero)
+    A = 3'b010; B = 3'b010; sel = 3'b010; Expected result: 000
+    #10;
+    
+    // Test case 6: Equal comparison
+    A = 3'b111; B = 3'b111; sel = 3'b101; 
+    #10;
+    
+    // Test case 7: Less than comparison
+    A = 3'b001; B = 3'b110; sel = 3'b110;
+    #10;
+    
+    // Test case 8: Greater than comparison
+    A = 3'b110; B = 3'b001; sel = 3'b111;
+    #10;
+
+    // Finish simulation
+    $stop;
+  end
+
+  // Monitor values
+  initial begin
+    $monitor("Time=%0t | A=%b, B=%b, sel=%b | result=%b, carry_out=%b, zero=%b, equal=%b, less_than=%b, greater_than=%b", 
+  			$time, A, B, sel, result, carry_out, zero, equal, less_than, greater_than);
+  end
+  
+endmodule
