@@ -7,7 +7,7 @@ The design was verified using a testbench to simulate and validate the ALU’s f
 
 ## Features
 - 3-bit inputs and outputs
-- Supports addition, subtraction, AND, OR, equality, less than, and greater than operations
-- Output flags: Carry out, Zero, Equal, Less than, Greater than
+- Supports addition, subtraction, AND, OR, equal, less than, and greater than operations
+- Output flags: Carry out, Zero,
 
 
