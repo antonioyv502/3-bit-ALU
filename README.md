@@ -12,4 +12,3 @@ The design was verified using a testbench to simulate and validate the ALU’s f
 
 ## ALU Simulation Waveform
 
-![ALU Waveform](waveform.png)
