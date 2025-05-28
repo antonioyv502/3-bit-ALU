@@ -9,3 +9,7 @@ The design was verified using a testbench to simulate and validate the ALU’s f
 - 3-bit inputs and outputs
 - Supports addition, subtraction, AND, OR, equality, less than, and greater than operations
 - Output flags: Carry out, Zero, Equal, Less than, Greater than
+
+## ALU Simulation Waveform
+
+![ALU Waveform](waveform.png)
