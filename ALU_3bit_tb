@@ -41,15 +41,15 @@ module ALU_3bit_tb;
     #10;
     
     // Test case 3: AND operation(result should be zero, zero flag should go high)
-    A = 3'b101; B = 3'b010; sel = 3'b011;  Expected result: 000
+    A = 3'b101; B = 3'b010; sel = 3'b011;  //Expected result: 000
     #10;
     
     // Test case 4: OR operation
-    A = 3'b011; B = 3'b100; sel = 3'b100; Expected result: 111
+    A = 3'b011; B = 3'b100; sel = 3'b100; //Expected result: 111
     #10;
     
     // Test case 5: Zero detection (A - A should be zero)
-    A = 3'b010; B = 3'b010; sel = 3'b010; Expected result: 000
+    A = 3'b010; B = 3'b010; sel = 3'b010; //Expected result: 000
     #10;
     
     // Test case 6: Equal comparison
