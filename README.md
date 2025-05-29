@@ -10,4 +10,8 @@ The design was verified using a testbench to simulate and validate the ALU’s f
 - Supports addition, subtraction, AND, OR, equal, less than, and greater than operations
 - Output flags: Carry out, Zero,
 
+## 📸 Simulation Waveform
 
+Below is a waveform showing the ALU performing various operations:
+
+![ALU Waveform](./waveform.png)
