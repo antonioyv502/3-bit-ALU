@@ -1,3 +1,0 @@
-git add waveform.png   # or images/waveform.png if it's in a subfolder
-git commit -m "waveform.png"
-git push
