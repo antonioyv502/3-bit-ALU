@@ -28,10 +28,7 @@ module ALU_3bit_tb;
 
   // Test procedure
   initial begin
-    // Dump file setup
-    $dumpfile("ALU_3bit_tb.vcd");
-    $dumpvars(0, ALU_3bit_tb);
-    
+
     // Test case 1: Addition (A + B)
     A = 3'b111; B = 3'b001; sel = 3'b001;   //Expected result: result:000, carry_out: 1
     #10;
