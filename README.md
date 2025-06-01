@@ -26,11 +26,16 @@ This project implements a 3-bit Arithmetic Logic Unit (ALU) using Verilog. The A
 Below is a waveform showing the ALU performing various operations and setting ouput flags:
 
 ![ALU Waveform](./Waveform/3-bit_ALU_Waveform.png)
-# Case 1 | A=111, B=010, sel=001 | result=001, carry_out=1, zero=0, equal=0, less_than=0, greater_than=0
-# Case 2 | A=111, B=001, sel=010 | result=110, carry_out=0, zero=0, equal=0, less_than=0, greater_than=0
-# Case 3 | A=101, B=010, sel=011 | result=000, carry_out=0, zero=1, equal=0, less_than=0, greater_than=0
-# Case 4 | A=011, B=100, sel=100 | result=111, carry_out=0, zero=0, equal=0, less_than=0, greater_than=0
-# Case 5 | A=010, B=010, sel=010 | result=000, carry_out=0, zero=1, equal=0, less_than=0, greater_than=0
-# Case 6 | A=111, B=111, sel=101 | result=000, carry_out=0, zero=0, equal=1, less_than=0, greater_than=0
-# Case 7 | A=001, B=110, sel=110 | result=000, carry_out=0, zero=0, equal=0, less_than=1, greater_than=0
-# Case 8 | A=110, B=001, sel=111 | result=000, carry_out=0, zero=0, equal=0, less_than=0, greater_than=1
+
+Below are the test cases for the 3-bit ALU and their corresponding output results, based on the waveform analysis:
+
+| Case | A   | B   | Sel   | Result | Carry Out | Zero | Equal | Less Than | Greater Than |
+|------|-----|-----|--------|--------|------------|------|--------|------------|---------------|
+| 1    | 111 | 010 | 001    | 001    | 1          | 0    | 0      | 0          | 0             |
+| 2    | 111 | 001 | 010    | 110    | 0          | 0    | 0      | 0          | 0             |
+| 3    | 101 | 010 | 011    | 000    | 0          | 1    | 0      | 0          | 0             |
+| 4    | 011 | 100 | 100    | 111    | 0          | 0    | 0      | 0          | 0             |
+| 5    | 010 | 010 | 010    | 000    | 0          | 1    | 0      | 0          | 0             |
+| 6    | 111 | 111 | 101    | 000    | 0          | 0    | 1      | 0          | 0             |
+| 7    | 001 | 110 | 110    | 000    | 0          | 0    | 0      | 1          | 0             |
+| 8    | 110 | 001 | 111    | 000    | 0          | 0    | 0      | 0          | 1             |
