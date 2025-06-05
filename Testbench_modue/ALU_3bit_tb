@@ -62,13 +62,7 @@ module ALU_3bit_tb;
     #10;
 
     // Finish simulation
-    $stop;
+    $finish;
   end
 
-  // Monitor values
-  initial begin
-    $monitor("Time=%0t | A=%b, B=%b, sel=%b | result=%b, carry_out=%b, zero=%b, equal=%b, less_than=%b, greater_than=%b", 
-  			$time, A, B, sel, result, carry_out, zero, equal, less_than, greater_than);
-  end
-  
 endmodule
