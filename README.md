@@ -39,3 +39,22 @@ Below are the test cases for the 3-bit ALU and their corresponding output result
 | 6    | 111 | 111 | 101    | 000    | 0          | 0    | 1      | 0          | 0             |
 | 7    | 001 | 110 | 110    | 000    | 0          | 0    | 0      | 1          | 0             |
 | 8    | 110 | 001 | 111    | 000    | 0          | 0    | 0      | 0          | 1             |
+
+
+Below is a waveform showing the ALU performing various operations and setting ouput flags:
+
+![ALU Waveform](./Waveform/3-bit_ALU_Waveform2.png)
+
+Below are the test cases for the 3-bit ALU and their corresponding output results, based on the waveform analysis:
+
+| Case | A   | B   | Sel   | Result | Carry Out | Zero | Equal | Less Than | Greater Than |
+|------|-----|-----|--------|--------|------------|------|--------|------------|---------------|
+| 1    | 111 | 001 | 010    | 001    | 1          | 0    | 0      | 0          | 0             |
+| 2    | 110 | 001 | 010    | 101    | 0          | 0    | 0      | 0          | 0             |
+| 3    | 101 | 010 | 011    | 000    | 0          | 1    | 0      | 0          | 0             |
+| 4    | 011 | 100 | 100    | 111    | 0          | 0    | 0      | 0          | 0             |
+| 5    | 101 | 101 | 010    | 000    | 0          | 1    | 0      | 0          | 0             |
+| 6    | 100 | 100 | 101    | 000    | 0          | 0    | 1      | 0          | 0             |
+| 7    | 001 | 010 | 110    | 000    | 0          | 0    | 0      | 1          | 0             |
+| 8    | 111 | 110 | 111    | 000    | 0          | 0    | 0      | 0          | 1             |
+
