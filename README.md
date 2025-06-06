@@ -42,7 +42,7 @@ Below are the test cases for the 3-bit ALU and their corresponding output result
 
 
 ### Waveform 2
-![ALU Waveform](./Waveform/3_bit_ALU_Waveform2.png)
+![ALU Waveform](./Waveform/3-bit-ALU-Waveform2.png)
 
 Below are the test cases for the 3-bit ALU and their corresponding output results, based on the waveform analysis:
 
