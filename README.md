@@ -6,7 +6,7 @@ This project implements a 3-bit Arithmetic Logic Unit (ALU) using Verilog. The A
 ## 🔧 Features
 - 3-bit inputs and outputs
 - Supports addition, subtraction, AND, OR, equal, less than, and greater than operations
-- Output flags: Carry out, Zero,
+- Output flags: Carry out, Zero
 
 ## Operation Select Lines
 
