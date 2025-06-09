@@ -66,7 +66,7 @@ Below are the test cases for the 3-bit ALU and their corresponding output result
 
 2. Click **"Run"** to simulate the testbench.
 
-3. View waveform outputs to verify results and flags.
+3. **Make sure "Open EPWave after run" is checked** under Tools & Simulators
 
 
 
