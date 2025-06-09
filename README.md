@@ -58,3 +58,15 @@ Below are the test cases for the 3-bit ALU and their corresponding output result
 | 8    | 111 | 110 | 111    | 0         | 000    | 0    | 0      | 0          | 1            |
 
 
+
+## How to Run
+
+1. Open the project in **EDA Playground**:  
+   👉 [https://www.edaplayground.com/x/hMpk](https://www.edaplayground.com/x/hMpk)
+
+2. Click **"Run"** to simulate the testbench.
+
+3. View waveform outputs to verify results and flags.
+
+
+
