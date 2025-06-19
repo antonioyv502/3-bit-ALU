@@ -38,7 +38,7 @@ module ALU_3bit(A, B, sel, result, carry_out, zero, equal, less_than, greater_th
     end
     
     
-AND: begin
+    AND: begin
       result = A & B;         //bitwise AND operation
     end
     
