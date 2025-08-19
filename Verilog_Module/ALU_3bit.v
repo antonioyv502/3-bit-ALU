@@ -27,7 +27,11 @@ module ALU_3bit(A, B, sel, result, carry_out, zero, equal, less_than, greater_th
    greater_than = 0;   //initializing greater_than to 0
    
     case (sel)
-      
+
+	XOR: begin
+		result = A ^ B;  //bitwsie XOR operation
+	end
+		
     ADD: begin 
       {carry_out, result} = A + B; //carryout if result exceeds 3 bits
     end
@@ -36,7 +40,6 @@ module ALU_3bit(A, B, sel, result, carry_out, zero, equal, less_than, greater_th
       result = A - B;
       carry_out = (A < B) ? 1 : 0; //carryout acts as borrowout
     end
-    
     
     AND: begin
       result = A & B;         //bitwise AND operation
