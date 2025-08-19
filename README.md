@@ -59,7 +59,7 @@ Below are the test cases for the 3-bit ALU and their corresponding output result
 
 
 ### Waveform 3
-![ALU Waveform](./Waveform/3-bit_ALU_Waveform_3.png)
+![ALU Waveform](./Waveform/3-bit_ALU_Waveform3.png)
 
 Below are the test cases for the 3-bit ALU and their corresponding output results, based on the waveform analysis, this text clase inlcudes and XOR operation:
 
