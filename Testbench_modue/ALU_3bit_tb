@@ -62,7 +62,7 @@ module ALU_3bit_tb;
     #10;
 
     //Test case 9: XOR operation
-    A = 3'b100; B=3'b100; sel=3'b000;
+    A = 3'b100; B = 3'b100; sel = 3'b000;
     #10;
 
     // Finish simulation
