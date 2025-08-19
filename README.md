@@ -58,6 +58,25 @@ Below are the test cases for the 3-bit ALU and their corresponding output result
 | 8    | 111 | 110 | 111    | 0         | 000    | 0    | 0      | 0          | 1            |
 
 
+### Waveform 3
+![ALU Waveform](./Waveform/3-bit_ALU_Waveform_3.png)
+
+Below are the test cases for the 3-bit ALU and their corresponding output results, based on the waveform analysis, this text clase inlcudes and XOR operation:
+
+| Case | A   | B   | Sel   | Carry Out | Result | Zero | Equal | Less Than | Greater Than |
+|------|-----|-----|--------|-----------|--------|------|--------|------------|--------------|
+| 1    | 111 | 001 | 001    | 1         | 001    | 0    | 0      | 0          | 0            |
+| 2    | 111 | 001 | 010    | 0         | 101    | 0    | 0      | 0          | 0            |
+| 3    | 101 | 010 | 011    | 0         | 000    | 1    | 0      | 0          | 0            |
+| 4    | 011 | 100 | 100    | 0         | 111    | 0    | 0      | 0          | 0            |
+| 5    | 010 | 010 | 010    | 0         | 000    | 1    | 0      | 0          | 0            |
+| 6    | 111 | 111 | 101    | 0         | 000    | 0    | 1      | 0          | 0            |
+| 7    | 001 | 110 | 110    | 0         | 000    | 0    | 0      | 1          | 0            |
+| 8    | 110 | 001 | 111    | 0         | 000    | 0    | 0      | 0          | 1            |
+| 9    | 100 | 100 | 000    | 0         | 000    | 1    | 0      | 0          | 0            |
+
+
+
 
 ## How to Run
 
