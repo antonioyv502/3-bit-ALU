@@ -12,7 +12,7 @@ This project implements a 3-bit Arithmetic Logic Unit (ALU) using Verilog. The A
 
 | Select (3-bit) | Operation              |
 |----------------|------------------------|
-| 000            | NOT USED               |
+| 000            | BITWISE XOR            |
 | 001            | ADD                    |
 | 010            | SUBTRACT               |
 | 011            | BITWISE AND            |
