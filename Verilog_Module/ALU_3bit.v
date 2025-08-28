@@ -9,7 +9,8 @@ module ALU_3bit(A, B, sel, result, carry_out, zero, equal, less_than, greater_th
   output reg equal;          //equal for comparing values
   output reg less_than;      //less_than for comparing values
   output reg greater_than;   //greater_than for comparing values
- 
+
+  parameter [2:0]XOR = 3'b000;
   parameter [2:0]ADD = 3'b001;
   parameter [2:0]SUB = 3'b010;
   parameter [2:0]AND = 3'b011;
