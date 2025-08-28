@@ -70,7 +70,7 @@ module ALU_3bit(A, B, sel, result, carry_out, zero, equal, less_than, greater_th
   endcase
 
   
-    if ((result == 3'b000) && (carry_out == 0) && (sel != EQ) && (sel != LT) && (sel != GT))
+	  if ((result == 3'b000) && (carry_out == 0) && (sel != EQ) && (sel != LT) && (sel != GT)) // Result only goes high for arithemtic operations and logical operations
         zero = 1;
       
 end
