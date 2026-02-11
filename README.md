@@ -25,7 +25,7 @@ This project implements a 3-bit Arithmetic Logic Unit (ALU) using Verilog. The A
 
 Below is a waveform showing the ALU performing various operations and setting ouput flags:
 ### Waveform 1
-![ALU Waveform](./Waveform/3-bit_ALU_Waveform.png)
+![ALU Waveform](./Waveform/3-bit_ALU_Waveform1.png)
 
 Below are the test cases for the 3-bit ALU and their corresponding output results, based on the waveform analysis:
 
