@@ -74,6 +74,7 @@ Below are the test cases for the 3-bit ALU and their corresponding output result
 | 7    | 001 | 110 | 110    | 0         | 000    | 0    | 0      | 1          | 0            |
 | 8    | 110 | 001 | 111    | 0         | 000    | 0    | 0      | 0          | 1            |
 | 9    | 100 | 100 | 000    | 0         | 000    | 1    | 0      | 0          | 0            |
+| 10   | 101 | 010 | 000    | 0         | 111    | 0    | 0      | 0          | 0            |
 
 
 
