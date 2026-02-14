@@ -72,7 +72,7 @@ a = 3'b100; b = 3'b100; sel = 3'b000;
 a = 3'b101; b = 3'b010; sel = 3'b000;
 #10; 
 
-//Special case: When all inputs are zero, the zero flag will go high
+//Test case 11: When all inputs are zero, the zero flag will go high
 a = 3'b000; b = 3'b000; sel =3'b000;
 #10;
 
