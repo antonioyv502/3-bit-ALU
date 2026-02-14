@@ -66,6 +66,10 @@ module ALU_3bit(A, B, sel, result, carry_out, zero, equal, less_than, greater_th
     default: begin
       result = 3'b000; //3 bit zero
       carry_out = 0;
+	  zero = 0;
+	  equal = 0;
+      less_than = 0;
+      greater_than = 0;
     end
   endcase
 
