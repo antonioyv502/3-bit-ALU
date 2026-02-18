@@ -89,4 +89,9 @@ Below are the test cases for the 3-bit ALU and their corresponding output result
 3. **Make sure "Open EPWave after run" is checked** under Tools & Simulators
 
 
+## FPGA Implementation
+![ALU Test1](./FPGA_Implementation_Images/Test1.png)
+![ALU Test2](./FPGA_Implementation_Images/Test3.png)
+![ALU Test3](./FPGA_Implementation_Images/Test2.png)
+![ALU Test4](./FPGA_Implementation_Images/Test4.png)
 
