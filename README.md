@@ -90,9 +90,11 @@ Below are the test cases for the 3-bit ALU and their corresponding output result
 
 
 ## FPGA Implementation
+
+A = 3'b0001, B = 3'b111, Cout = 1'b1, result = 3'b000
 ![ALU Test1](./FPGA_Implementation_Images/Test1.png)
 
-A = 3'b0001, B = 3'b111, Cout = 1'b1, Result = 3'b000
+
 
 ![ALU Test2](./FPGA_Implementation_Images/Test3.png)
 ![ALU Test3](./FPGA_Implementation_Images/Test2.png)
