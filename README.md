@@ -92,21 +92,25 @@ Below are the test cases for the 3-bit ALU and their corresponding output result
 ## FPGA Implementation
 
 This test is adding 1 + 7 
-![ALU Test1](./FPGA_Implementation_Images/Test1.png)
+![ALU Test_Additon](./FPGA_Implementation_Images/Test1.png)
 
 This testing is subtracting 7-1
-![ALU Test2](./FPGA_Implementation_Images/Test2.png)
+![ALU_Test_Subtraction](./FPGA_Implementation_Images/Test2.png)
 
 
-![ALU Test3](./FPGA_Implementation_Images/Test3.png)
+![ALU_Test_AND](./FPGA_Implementation_Images/Test3.png)
 
 
-![ALU Test4](./FPGA_Implementation_Images/Test4.png)
+![ALU_Test_OR](./FPGA_Implementation_Images/Test4.png)
 
 
-![ALU Test4](./FPGA_Implementation_Images/Test6.png)
+![ALU_Test_Equal](./FPGA_Implementation_Images/Test6.png)
 
 
-![ALU Test4](./FPGA_Implementation_Images/Test7.png)
+![ALU_Test_Less](./FPGA_Implementation_Images/Test7.png)
 
 
+![ALU_Test_Greater](./FPGA_Implementation_Images/Test8.png)
+
+
+![ALU_Test_XOR](./FPGA_Implementation_Images/Test9.png)
