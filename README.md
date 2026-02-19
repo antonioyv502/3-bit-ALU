@@ -91,13 +91,13 @@ Below are the test cases for the 3-bit ALU and their corresponding output result
 
 ## FPGA Implementation
 
-A = 3'b001, B = 3'b111, Cout = 1'b1, result = 3'b000
+This test is adding 1 + 7 
 ![ALU Test1](./FPGA_Implementation_Images/Test1.png)
 
-A = 3'b111, B = 3'b001, result = 3'b110
+This testing is subtracting 7-1
 ![ALU Test2](./FPGA_Implementation_Images/Test2.png)
 
-A = 3'b
+
 ![ALU Test3](./FPGA_Implementation_Images/Test3.png)
 
 
