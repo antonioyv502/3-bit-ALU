@@ -103,3 +103,10 @@ This testing is subtracting 7-1
 
 ![ALU Test4](./FPGA_Implementation_Images/Test4.png)
 
+
+![ALU Test4](./FPGA_Implementation_Images/Test6.png)
+
+
+![ALU Test4](./FPGA_Implementation_Images/Test7.png)
+
+
