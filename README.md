@@ -21,6 +21,18 @@ This project implements a 3-bit Arithmetic Logic Unit (ALU) using Verilog. The A
 | 110            | LESS THAN COMPARISON   |
 | 111            | GREATER THAN COMPARISON|
 
+## FPGA Pin Mapping 
+### Inputs (Switches)
+
+| Switch | Signal | Width | Description |
+|-------|--------|-------|------------|
+| SW[5:3] | a | 3-bit | Operand A input to ALU |
+| SW[2:0] | b | 3-bit | Operand B input to ALU |
+| SW[9:7] | sel | 3-bit | ALU operation select |
+| SW[8] | — | 1-bit | Not used |
+
+
+
 ## 📸 Simulation Waveform
 
 Below is a waveform showing the ALU performing various operations and setting ouput flags:
