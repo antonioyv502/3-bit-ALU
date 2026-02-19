@@ -91,16 +91,16 @@ Below are the test cases for the 3-bit ALU and their corresponding output result
 
 ## FPGA Implementation
 
-This test is adding 1 + 7 
+This test is adding 1 + 7, which results in cout going high. 
 ![ALU Test_Additon](./FPGA_Implementation_Images/Test1.png)
 
-This testing is subtracting 7-1
+This test is subtracting 7 - 1 which results in 6 (110).
 ![ALU_Test_Subtraction](./FPGA_Implementation_Images/Test2.png)
 
-
+This test is a bitwise AND operation of 5 (101) and 2 (010) which results in the zero output going high. 
 ![ALU_Test_AND](./FPGA_Implementation_Images/Test3.png)
 
-
+This test is a bitiwse OR operation of 3 (011) and 4 (100) which results in 7 (111). 
 ![ALU_Test_OR](./FPGA_Implementation_Images/Test4.png)
 
 
