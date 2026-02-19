@@ -22,6 +22,7 @@ This project implements a 3-bit Arithmetic Logic Unit (ALU) using Verilog. The A
 | 111            | GREATER THAN COMPARISON|
 
 ## FPGA Pin Mapping 
+
 ### Inputs (Switches)
 
 | Switch | Signal | Width | Description |
@@ -31,6 +32,17 @@ This project implements a 3-bit Arithmetic Logic Unit (ALU) using Verilog. The A
 | SW[9:7] | sel | 3-bit | ALU operation select |
 | SW[8] | — | 1-bit | Not used |
 
+### Outputs (LEDs)
+
+| LED | Signal | Width | Description |
+|----|--------|-------|------------|
+| LEDR[2:0] | result | 3-bit | ALU result |
+| LEDR[3] | carry_out | 1-bit | Carry / Borrow flag |
+| LEDR[4] | zero | 1-bit | Result equals zero |
+| LEDR[5] | equal | 1-bit | A equals B |
+| LEDR[6] | less_than | 1-bit | A less than B |
+| LEDR[7] | greater_than | 1-bit | A greater than B |
+| LEDR[9:8] | — | 2-bit | Unused (forced to 0) |
 
 
 ## 📸 Simulation Waveform
@@ -103,7 +115,7 @@ Below are the test cases for the 3-bit ALU and their corresponding output result
 
 ## FPGA Implementation
 
-This test is adding 1 + 7, which results in cout going high. 
+This test is adding 1 + 7, which results in the carryout output going high. 
 ![ALU Test_Additon](./FPGA_Implementation_Images/Test1.png)
 
 This test is subtracting 7 - 1 which results in 6 (110).
