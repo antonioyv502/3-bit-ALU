@@ -127,7 +127,7 @@ This test is a bitwise AND operation of 5 (101) and 2 (010) which results in the
 This test is a bitiwse OR operation of 3 (011) and 4 (100) which results in 7 (111). 
 ![ALU_Test_OR](./FPGA_Implementation_Images/Test4.png)
 
-
+This test is an equal comparison, with A = 7 (111) an B = 7 (111), which results in the equal output going high. 
 ![ALU_Test_Equal](./FPGA_Implementation_Images/Test6.png)
 
 
