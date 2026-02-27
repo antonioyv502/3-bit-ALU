@@ -140,4 +140,4 @@ This test is a bitwise XOR operation of 2 (010) and 2 (010) which results in the
 ![ALU_Test_XOR](./FPGA_Implementation_Images/Test9.png)
 
 This test is subtracting 3 (011) - 7 (111) which results in 4 (100) and the borrow/carryout output going high since A is less than B. 
-![ALU_Test_Borrow](./FPGA_Implementation_Images/Test9.png)
+![ALU_Test_Borrow](./FPGA_Implementation_Images/Test10.png)
