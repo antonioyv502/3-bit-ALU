@@ -136,5 +136,5 @@ This test is a less than comparison, with A = 1 (001) an B = 6 (110), which resu
 This test is a greater than comparison, with A = 6 (110) an B = 1 (001), which results in the greater than output going high.
 ![ALU_Test_Greater](./FPGA_Implementation_Images/Test8.png)
 
-This test is a bitwise XOR operation of 5 (101) and 2 (010) which results in the zero output going high. 
+This test is a bitwise XOR operation of 2 (010) and 2 (010) which results in the zero output going high. 
 ![ALU_Test_XOR](./FPGA_Implementation_Images/Test9.png)
