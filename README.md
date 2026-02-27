@@ -115,10 +115,10 @@ Below are the test cases for the 3-bit ALU and their corresponding output result
 
 ## FPGA Implementation
 
-This test is adding 1 + 7, which results in the carryout output going high. 
+This test is adding 1 (001) + 7 (111), which results in the carryout output going high. 
 ![ALU Test_Additon](./FPGA_Implementation_Images/Test1.png)
 
-This test is subtracting 7 - 1 which results in 6 (110).
+This test is subtracting 7 (111) - 1 (001) which results in 6 (110).
 ![ALU_Test_Subtraction](./FPGA_Implementation_Images/Test2.png)
 
 This test is a bitwise AND operation of 5 (101) and 2 (010) which results in the zero output going high. 
@@ -138,3 +138,6 @@ This test is a greater than comparison, with A = 6 (110) an B = 1 (001), which r
 
 This test is a bitwise XOR operation of 2 (010) and 2 (010) which results in the zero output going high. 
 ![ALU_Test_XOR](./FPGA_Implementation_Images/Test9.png)
+
+This test is subtracting 3 (011) - 7 (111) which results in 4 (100) and the borrow/carryout output going high since A is less than B. 
+![ALU_Test_Borrow](./FPGA_Implementation_Images/Test9.png)
