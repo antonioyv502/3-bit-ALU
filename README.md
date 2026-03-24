@@ -1,7 +1,7 @@
 # 3-bit Arithmetic Logic Unit (ALU)
 
 ## Description
-This project implements a 3-bit Arithmetic Logic Unit (ALU) using Verilog. The ALU performs arithmetic and logical operations determined by a 3-bit select input and sets output flags such as carry out and zero. The design was verified using a testbench to simulate and validate the ALU’s functionality, with all 8 test cases producing the expected results.
+This project implements a 3-bit Arithmetic Logic Unit (ALU) using Verilog and implemented on a Max DE-10 Lite FPGA Board. The ALU performs arithmetic and logical operations determined by a 3-bit select input and sets output flags such as carry out and zero. The design was verified using a testbench to simulate and validate the ALU’s functionality, with all 8 test cases producing the expected results.
 
 ## 🔧 Features
 - 3-bit inputs and outputs
