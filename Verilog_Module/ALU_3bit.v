@@ -1,7 +1,7 @@
-module ALU_3bit(A, B, sel, result, carry_out, zero, equal, less_than, greater_than);
+module ALU_3bit(a, b, sel, result, carry_out, zero, equal, less_than, greater_than);
   
-  input [2:0] A;             //3 bit input A
-  input [2:0] B;             // 3 bit input B
+  input [2:0] a;             //3 bit input A
+  input [2:0] b;             // 3 bit input B
   input [2:0] sel;           //select the operator 
   output reg [2:0] result;   //3 bit output 
   output reg carry_out;      //carryout for addition and borrow for subtraction(status flag)
@@ -29,37 +29,37 @@ module ALU_3bit(A, B, sel, result, carry_out, zero, equal, less_than, greater_th
    
     case (sel)
 		XOR: begin
-			result = A ^ B;  //bitwsie XOR operation
+			result = a ^ b;  //bitwsie XOR operation
 		end
 			
 	    ADD: begin 
-	      {carry_out, result} = A + B; //carryout if result exceeds 3 bits
+		  {carry_out, result} = a + b; //carryout if result exceeds 3 bits
 	    end
 	     
 	    SUB: begin
-	      result = A - B;
-	      carry_out = (A < B) ? 1 : 0; //carryout acts as borrowout
+	      result = a - b;
+		  carry_out = (a < b) ? 1 : 0; //carryout acts as borrowout
 	    end
 	    
 	    AND: begin
-	      result = A & B;         //bitwise AND operation
+	      result = a & b;         //bitwise AND operation
 	    end
 	    
 	    OR: begin 
-	      result = A | B;  //bitwise OR operation
+	      result = a | b;  //bitwise OR operation
 	    end
 		
 	    EQ: begin 
-	      equal = (A == B) ? 1 : 0;  //equal output goes high if A and B are equal, else 0
+		  equal = (a == b) ? 1 : 0;  //equal output goes high if A and B are equal, else 0
 	    
 	    end
 	     
 	    LT: begin 
-	      less_than = (A < B) ? 1: 0; //less_than output goes high if A is less than B, else 0
+		  less_than = (a < b) ? 1: 0; //less_than output goes high if A is less than B, else 0
 	    end 
 	     
 	     GT: begin 
-	       greater_than = (A > B) ? 1 : 0;  //greater_than output goes high if A is greater than B, else 0
+		  greater_than = (a > b) ? 1 : 0;  //greater_than output goes high if A is greater than B, else 0
 	     end 
 	     
 	    default: begin
