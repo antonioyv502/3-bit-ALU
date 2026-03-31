@@ -63,7 +63,7 @@ a = 3'b110; b = 3'b001; sel = 3'b111;
 #10;
     
 
-//Test case 9: XOR operation, result should be zero, zergo flag should go high
+//Test case 9: XOR operation, result should be zero, zero flag should go high
 a = 3'b100; b = 3'b100; sel = 3'b000;
 #10;
  
