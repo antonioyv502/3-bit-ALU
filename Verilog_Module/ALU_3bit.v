@@ -13,9 +13,9 @@ module ALU_3bit(a, b, sel, result, carry_out, zero, equal, less_than, greater_th
   reg [2:0] result;
   reg       carry_out;
   reg       zero;
-  reg       equal;
-  reg       less_than
-  reg       greater_than
+  reg       equal; 
+  reg       less_than;
+  reg       greater_than;
  
  
   parameter [2:0] XOR = 3'b000;
