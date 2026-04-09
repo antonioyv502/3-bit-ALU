@@ -12,7 +12,7 @@ module ALU_3bit(a, b, sel, result, carry_out, zero, equal, less_than, greater_th
  
   reg [2:0] result;
   reg       carry_out;
-  reg       zero;
+  reg       zero; 
   reg       equal; 
   reg       less_than;
   reg       greater_than;
@@ -47,8 +47,7 @@ module ALU_3bit(a, b, sel, result, carry_out, zero, equal, less_than, greater_th
         end
          
         SUB: begin
-          result = a - b;
-          carry_out = (a < b) ? 1 : 0; //carryout acts as borrowout
+          {carry_out, result} = a - b;
         end
        
         AND: begin
