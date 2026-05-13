@@ -28,12 +28,12 @@ module ALU_3bit(a, b, sel, result, carry_out, zero, equal, less_than, greater_th
   parameter [2:0] GT  = 3'b111;
  
   always @(*) begin
-   result = 0;         //initializng result to 0
-   carry_out = 0;      //initializng carry_out to 0
-   zero = 0;           //initializng zero to 0
-   equal = 0;          //initializing equal to 0
-   less_than = 0;      //initializing less_than to 0
-   greater_than = 0;   //initializing greater_than to 0
+   result       = 3'b000;     //initializng result to 0
+   carry_out    = 1'b0;      //initializng carry_out to 0
+   zero         = 1'b0;      //initializng zero to 0
+   equal        = 1'b0;      //initializing equal to 0
+   less_than    = 1'b0;      //initializing less_than to 0
+   greater_than = 1'b0;      //initializing greater_than to 0
    
     case (sel)
 		
@@ -72,12 +72,12 @@ module ALU_3bit(a, b, sel, result, carry_out, zero, equal, less_than, greater_th
          end
          
         default: begin
-          result = 3'b000; //3 bit zero
-          carry_out = 0;
-          zero = 0;
-          equal = 0;
-          less_than = 0;
-          greater_than = 0;
+          result       = 3'b000; //3 bit zero
+          carry_out    = 1'b0;
+          zero         = 1'b0;
+          equal        = 1'b0;
+          less_than    = 1'b0;
+          greater_than = 1'b0;
         end
     endcase
 
